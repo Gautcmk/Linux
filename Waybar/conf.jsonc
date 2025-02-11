@@ -18,6 +18,7 @@
         "clock",
         "custom/power"
     ],
+
     // CONFIG
     "hyprland/workspaces": {
         "disable-scroll": true,
@@ -26,10 +27,11 @@
         "format": "{name}: {icon}",
         "format-icons": {
             "urgent": "",
-            "active": "",
+            "focused": "",
             "default": ""
         }
-    },
+    }, 
+    
     "hyprland/workspaces": {
         "format": "{icon}",
         "on-click": "activate",
