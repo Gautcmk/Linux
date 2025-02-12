@@ -13,25 +13,30 @@
 
 /*MODULES-LEFT*/
 #custom-archlogo {
-  }
+    color: RGB(23, 147, 209);
+    font-family: "Nerd Font";
+    font-size: 24px;
+    padding-left: 12px;
+    padding-right: 20px;
+}
+#custom-os_button:hover {
+    color: rgba(200, 200, 200, 0.3);
+}
 
 #workspaces {
     color: transparent;
     border-left: 1px solid white;
     border-right: 1px solid white;
 }
-
 #workspaces button {
     transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-
 #workspaces button.active {
     color: white;
     border-bottom: 3px solid white;
 }
-
 #workspaces button:hover {
-    color: white;
+    color: rgba(200, 200, 200, 0.3);
 }
 
 /*MODULES-CENTER*/
@@ -40,14 +45,37 @@
 /*MODULES-RIGHT*/
 #network {
     color: white;
+    margin-left: 3px;
+    margin-right: 3;
 }
+#network:hover {
+    color: rgba(200, 200, 200, 0.3);
+}
+
 #pulseaudio{
     color: white;
+    margin-left: 3px;
+    margin-right: 3;
 }
+#pulseaudio:hover {
+    color: rgba(200, 200, 200, 0.3);
+}
+
 #battery{
     color: white;
+    margin-left: 3px;
+    margin-right: 3;
 }
+#battery:hover {
+    color: rgba(200, 200, 200, 0.3);
+}
+
 #clock{
-    margin: 5px;
     color: white;
+    border-left: 1px white;
+    margin-left: 3px;
+    margin-right: 6px;   
+}
+#clock:hover {
+	color: rgba(200, 200, 200, 0.3);
 }
