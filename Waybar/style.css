@@ -6,6 +6,7 @@
     font-family: "Font Awesome 6 Free";
 }
 
+/*MODULES-LEFT*/
 #custom-archicon {
     font-size: 16px; 
     color: #1793d1;  
@@ -18,26 +19,25 @@
     color: transparent;
       margin-right: 1.5px;
       margin-left: 1.5px;
-  }
-  #workspaces button {
+}
+
+#workspaces button {
     padding: 3px;
     color: rgba(255, 255, 255, 0.25);
       transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
-  }
-  #workspaces button.active {
+}
+
+#workspaces button.active {
       color: white;
       border-bottom: 3px solid white;
-  }
-  #workspaces button.focused {
-    color: rgba(100, 100, 100, 0.5);
-  }
-  #workspaces button.urgent {
-      background:  rgba(255, 200, 0, 0.35);
-      border-bottom: 3px dashed white;
-      color: red;
-  }
-  #workspaces button:hover {
+}
+
+#workspaces button:hover {
     background: bg_hover rgba(200, 200, 200, 0.3);
       color: white;
-  }
+}
 
+/*MODULES-CENTER*/
+
+
+/*MODULES-RIGHT*/
