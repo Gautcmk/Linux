@@ -8,7 +8,7 @@
 
 #waybar {
     background-color: rgba(43, 48, 59, 0.5);
-    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+    border-bottom: 3px;
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
@@ -50,17 +50,14 @@
 /*MODULES-RIGHT*/
 #network {
     color: white;
-    border-bottom: 3px solid white;
 }
+
 #pulseaudio{
     color: white;
-    border-bottom: 3px solid white;
 }
 #battery{
     color: white;
-    border-bottom: 3px solid white;
 }
 #clock{
     color: white;
-    border-bottom: 3px solid white;
 }
