@@ -15,10 +15,14 @@
 }
 
 /*MODULES-LEFT*/
-#custom-archicon {
-    margin-left: 7px;
-    font-size: 12px;
-}
+#custom-archlogo {
+    background-image: url("~/.config/waybar/logo/archlinux-logo.png");
+    background-size: 35px 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 30px;
+    margin-left: 15px;
+  }
 
 #workspaces {
     color: transparent;

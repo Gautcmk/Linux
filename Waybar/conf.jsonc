@@ -6,7 +6,7 @@
     "spacing": 4,
 
     "modules-left": [
-        "custom/archicon",
+        "custom/archlogo",
         "hyprland/workspaces"
     ],
 
@@ -22,7 +22,7 @@
     ],
 
 // CONFIG-LEFT
-    "custom/archicon": {
+    "custom/archlogo": {
         "format": "",
         "tooltip": false,
         "menu": "on-click",
@@ -49,12 +49,11 @@
         "format-wifi": "{icon}",
         "format-ethernet": "",
         "format-disconnected": "", 
-        "format-icons": [
-            "",
-            "",
-            "",
-            ""
-        ]
+        "format-icons": {
+            "wifi-0": "",
+            "wifi-1": "",
+            "wifi-2": ""        
+        }
     },
 
     "pulseaudio": {
@@ -62,25 +61,25 @@
             "muted": "",
             "low": "",
             "medium": "",
-            "high": ""
+            "high": ""
         
         }
     },
 
     "battery": {
-      "format": "{icon} {capacity}%",
-      "format-plugged": " {capacity}%",
-      "format-icons": [],
-      "max-length": 25,
-      "tooltip": true,
-      "interval": 5,
-      "states": {
-        "good": 70,
-        "warning": 30,
-        "critical": 15
-      }
-
+    "format": "{icon} {capacity}%",
+    "format-charging": "{capacity}%",
+    "format-plugged": "{capacity}%",
+    "format-full": "{capacity}%",
+    "tooltip": true,
+    "states": {
+      "10": "critical",
+      "20": "low",
+      "50": "medium",
+      "80": "good"
     },
+    "format-icons": ["", "", "", "", ""]
+  },
 
     "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
