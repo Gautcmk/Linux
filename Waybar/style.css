@@ -17,12 +17,13 @@
 
 #workspaces {
     color: transparent;
-      margin-right: 1.5px;
-      margin-left: 1.5px;
+    margin-right: 4px;
+    margin-left: 4px;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
 }
 
 #workspaces button {
-    padding: 3px;
     color: rgba(255, 255, 255, 0.25);
       transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
@@ -33,7 +34,7 @@
 }
 
 #workspaces button:hover {
-    background: bg_hover rgba(200, 200, 200, 0.3);
+    background: rgba(200, 200, 200, 0.3);
       color: white;
 }
 
