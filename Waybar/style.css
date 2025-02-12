@@ -9,7 +9,7 @@
 }
 
 window#waybar {
-    background-color: transparent;
+    background-color: #383c4a;
     border-radius: 13px;
     transition-property: background-color;
     transition-duration: .5s;
@@ -26,7 +26,7 @@ window#waybar.hidden {
     padding-right: 16px;
     border-radius: 10px;
     transition: none;
-    background: #383c4a;
+    background-color: #383c4a;
 }
 
 #workspaces {
