@@ -6,6 +6,7 @@
     "spacing": 4,
 
     "modules-left": [
+        "custom/archicon",
         "hyprland/workspaces"
     ],
 
@@ -13,34 +14,80 @@
         "hyprland/window"
     ],
 
-    "modules-right": [
-        "pulseaudio",
+    "modules-right": [    
         "network",
-        "temperature",
+        "pulseaudio",
         "battery",
-        "clock",
-        "custom/power"
+        "clock"
     ],
 
 // CONFIG-LEFT
+    "custom/archicon": {
+        "format": "  ",
+        "tooltip": false,
+        "menu": "on-click",
+		"menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
+		"menu-actions": {
+			"shutdown": "shutdown",
+			"reboot": "reboot",
+			"suspend": "systemctl suspend",
+			"hibernate": "systemctl hibernate"
+        }
+    },
+
     "hyprland/workspaces": {
-        "disable-scroll": true,
-        "all-outputs": true,
-        "warp-on-scroll": false,
-        "format": "{name}: {icon}",
-        "format-icons": {
-            "urgent": "",
-            "active": "",
-            "default": ""
-            }
-    }
+        "icon-size": 32,
+        "spacing": 16,
+        "on-scroll-up": "hyprctl dispatch workspace r+1",
+        "on-scroll-down": "hyprctl dispatch workspace r-1"
+    },
 
 //CONFIG-CENTER
     "hyprland/window": { 
-        "
-    }
+        
+    },
 
 //CONFIG-RIGHT
-    "
+    "network": {
+        "format-wifi": "{icon}",
+        "format-ethernet": "",
+        "format-disconnected": "", 
+        "format-icons": [
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+
+    "pulseaudio": {
+        "format-icons": {
+            "muted": "",
+            "low": "",
+            "medium": "",
+            "high": ""
+        
+        }
+    },
+
+    "battery": {
+      "format": "{icon} {capacity}%",
+      "format-plugged": " {capacity}%",
+      "format-icons": [],
+      "max-length": 25,
+      "tooltip": true,
+      "interval": 5,
+      "states": {
+        "good": 70,
+        "warning": 30,
+        "critical": 15
+      }
+
+    },
+
+    "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}"
+    }
 
 }
