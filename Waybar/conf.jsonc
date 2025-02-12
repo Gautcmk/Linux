@@ -2,44 +2,22 @@
 // GENERAL    
     "layer": "top",
     "position": "top",
-    "margin-top" : 5,
-    "margin-left": 10,
-    "margin-right": 10,
-    "height": 30,
-    "spacing": 0,
+    "margin": "5 5 0 5",
 
-    "modules-left": [
-        "custom/archlogo",
-        "hyprland/workspaces"
-    ],
+    "modules-left": ["custom/archlogo", "hyprland/workspaces"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": ["network", "pulseaudio", "battery", "clock"],
 
-    "modules-center": [
-        "hyprland/window"
-    ],
-
-    "modules-right": [    
-        "network",
-        "pulseaudio",
-        "battery",
-        "clock"
-    ],
 
 // CONFIG-LEFT
     "custom/archlogo": {
         "format": "󰣇",
+        "format-size": 16,
+        "spacing": 0,
         "tooltip": false
     },
 
     "hyprland/workspaces": {
-        "sort-by-number": true,
-        "all-outpouts": true,
-        "persistent_workspaces": {
-            "1": [],
-            "2": [],
-            "3": [],
-            "4": [],
-            "5": []
-        }
     },
 
 //CONFIG-CENTER
@@ -48,40 +26,30 @@
 
 //CONFIG-RIGHT
     "network": {
-      "format-wifi": "  {signalStrength}%",
-      "format-ethernet": "{cidr} ",
-      "tooltip-format": "{ifname} via {gwaddr} ",
-      "format-linked": "{ifname} (No IP) ",
-      "format-disconnected": " ⚠ ",
-      "format-alt": "{ifname}: {ipaddr}/{cidr}"
+        
     },
 
     "pulseaudio": {
-      "format": "{icon}  {volume}%",
-      "format-bluetooth": "{volume}% {icon} {format_source}",
-      "format-bluetooth-muted": " {icon} {format_source}",
-      "format-muted": "",
-      "format-icons": {
-        "headphone": "",
-        "hands-free": "",
-        "headset": "",
-        "phone": "",
-        "portable": "",
-        "car": "",
-        "default": ["", "", ""]
-      },
-      "on-click": "pavucontrol"
+        "reverse-scrolling": 1,
+        "format": "{icon}",
+        "format-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "pavucontrol",
+        "min-length": 13,
     },
-
+    
     "battery": {
         "states": {
             "warning": 30,
             "critical": 15
         },
-      "format": "{icon}  {capacity}%",
-      "format-full": "{icon}  {capacity}%",
-      "format-charging": "  {capacity}%",
-      "format-plugged": "  {capacity}%",
+      "format": "{icon}",
+      "format-full": "{icon}",
+      "format-charging": "",
+      "format-plugged": "",
       "format-icons": ["", "", "", "", ""]
     },
 
