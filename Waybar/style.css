@@ -1,15 +1,18 @@
 * {
-    font-family: "Segoe UI", "Ubuntu";
-    font-size: 15px;
-    background-color: rgba(43, 48, 59, 0.5);
-    border-bottom: 3px;
-    color: #ffffff;
-    transition-property: background-color;
-    transition-duration: .5s;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    background-color: transparent;
 }
 .icon {
     font-family: "Font Awesome 6 Free";
 }
+
+window#waybar {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 13px;
+    transition-property: background-color;
+    transition-duration: .5s;
+  }
 
 /*MODULES-LEFT*/
 #custom-archlogo {
@@ -19,20 +22,20 @@
     padding-left: 12px;
     padding-right: 20px;
 }
-#custom-os_button:hover {
-    color: rgba(200, 200, 200, 0.3);
-}
 
 #workspaces {
-    color: transparent;
+    background-color: transparent;
     border-left: 1px solid white;
     border-right: 1px solid white;
 }
 #workspaces button {
+    color: white;
+    padding: 0 5%;
+    background-color: transparent;
     transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 #workspaces button.active {
-    color: white;
+    background-color: rgba(200, 200, 200, 0.3);
     border-bottom: 3px solid white;
 }
 #workspaces button:hover {
@@ -44,38 +47,29 @@
 
 /*MODULES-RIGHT*/
 #network {
-    color: white;
-    margin-left: 3px;
-    margin-right: 3;
+    color: rgba(200, 200, 200, 0.3)
 }
 #network:hover {
-    color: rgba(200, 200, 200, 0.3);
+    color: rgba(200, 200, 200, 0.3)
 }
 
 #pulseaudio{
-    color: white;
-    margin-left: 3px;
-    margin-right: 3;
+    color: rgba(200, 200, 200, 0.3)
 }
 #pulseaudio:hover {
-    color: rgba(200, 200, 200, 0.3);
+    color: rgba(200, 200, 200, 0.3)
 }
 
 #battery{
-    color: white;
-    margin-left: 3px;
-    margin-right: 3;
+    color: rgba(200, 200, 200, 0.3)
 }
 #battery:hover {
-    color: rgba(200, 200, 200, 0.3);
+    color: rgba(200, 200, 200, 0.3)
 }
 
 #clock{
-    color: white;
-    border-left: 1px white;
-    margin-left: 3px;
-    margin-right: 6px;   
+    color: rgba(200, 200, 200, 0.3)
 }
 #clock:hover {
-	color: rgba(200, 200, 200, 0.3);
+	color: rgba(200, 200, 200, 0.3)
 }
