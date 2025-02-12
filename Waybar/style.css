@@ -25,6 +25,7 @@
     color: transparent;
     margin-right: 4px;
     margin-left: 4px;
+    border-bottom: 3px;
     border-left: 1px solid white;
     border-right: 1px solid white;
 }
