@@ -13,12 +13,6 @@
 
 /*MODULES-LEFT*/
 #custom-archlogo {
-    background-image: url("~/.config/waybar/logo/archlinux-logo.png");
-    background-size: 35px 35px;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding-left: 30px;
-    margin-left: 15px;
   }
 
 #workspaces {
