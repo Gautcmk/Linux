@@ -25,20 +25,36 @@
 
 #workspaces button {
     color: rgba(255, 255, 255, 0.25);
-      transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 #workspaces button.active {
-      color: white;
-      border-bottom: 3px solid white;
+    color: white;
+    border-bottom: 3px solid white;
 }
 
 #workspaces button:hover {
     background: rgba(200, 200, 200, 0.3);
-      color: white;
+    color: white;
 }
 
 /*MODULES-CENTER*/
 
 
 /*MODULES-RIGHT*/
+#network {
+    color: white;
+    border-bottom: 3px solid white;
+}
+#pulseaudio{
+    color: white;
+    border-bottom: 3px solid white;
+}
+#battery{
+    color: white;
+    border-bottom: 3px solid white;
+}
+#clock{
+    color: white;
+    border-bottom: 3px solid white;
+}
