@@ -45,7 +45,7 @@
             "default": ["", "", ""]
         },
         "on-click": "pavucontrol",
-        "min-length": 13,
+        "min-length": 13
     },
     
     "battery": {
@@ -53,10 +53,9 @@
             "warning": 30,
             "critical": 15
         },
-      "format": "{icon}",
-      "format-full": "{icon}",
-      "format-charging": "",
-      "format-plugged": "",
+      "format": "{icon} {capacity}%",
+      "format-full": "{icon} {capacity}%",
+      "format-charging": " {capacity}%",
       "format-icons": ["", "", "", "", ""]
     },
 
