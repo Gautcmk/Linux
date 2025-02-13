@@ -29,7 +29,7 @@ window#waybar {
 }
 #workspaces button {
     padding-left: 10px;
-    padding-left: 10px;
+    padding-right: 10px;
     transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1)
 }
 #workspaces button.active {
@@ -37,13 +37,11 @@ window#waybar {
     border-bottom: 3px solid white
 }
 #workspaces button:hover {
-    color: rgba(200, 200, 200, 0.3);
+    color: rgba(200, 200, 200, 0.3)
 }
 
 
 /*MODULES-CENTER*/
-
-
 
 /*MODULES-RIGHT*/
 #network {
