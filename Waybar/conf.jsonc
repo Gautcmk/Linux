@@ -2,7 +2,7 @@
 // GENERAL    
     "layer": "top",
     "position": "top",
-    "height": 30,
+    "height": 35,
     "margin": "5 5 0 5",
 
     "modules-left": ["custom/archlogo", "hyprland/workspaces"],
@@ -13,8 +13,6 @@
 // CONFIG-LEFT
     "custom/archlogo": {
         "format": "󰣇",
-        "format-size": 16,
-        "spacing": 0,
         "tooltip": false
     },
 

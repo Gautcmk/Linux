@@ -1,8 +1,7 @@
 * {
-    border: none;
-    border-radius: 0;
     font-family: Roboto, Helvetica, Arial, sans-serif;
-    min-height: 20px;
+    transition-property: background-color;
+    transition-duration: .5s;
 }
 .icon {
     font-family: "Font Awesome 6 Free";
@@ -10,12 +9,9 @@
 
 window#waybar {
     background-color: #383c4a;
-    border-radius: 15px;
-    
+    border-radius: 15px; 
 }
-window#waybar.hidden {
-    opacity: 0.2;
-}
+
 
 /*MODULES-LEFT*/
 #custom-archlogo {
@@ -24,7 +20,6 @@ window#waybar.hidden {
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 15px;
-    transition: none;
 }
 
 #workspaces {
@@ -51,62 +46,48 @@ window#waybar.hidden {
 
 /*MODULES-RIGHT*/
 #network {
-    color: rgba(200, 200, 200, 0.3)
+    color: white;
+    margin-right: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 15px;
+    background: blue
 }
 #network:hover {
     color: rgba(200, 200, 200, 0.3)
 }
 
 #pulseaudio {
-    margin-right: 8px;
+    color: white;
+    margin-right: 10px;
     padding-left: 16px;
     padding-right: 16px;
-    border-radius: 10px;
-    transition: none;
-    color: #ffffff;
-    background: #383c4a;
+    border-radius: 15px;
+    background: blue
 }
-#pulseaudio.muted {
-    background-color: #90b1b1;
-    color: #2a5c45;
-}
-
 #pulseaudio:hover {
     color: rgba(200, 200, 200, 0.3)
 }
 
 #battery {
-    margin-right: 8px;
+    color: white;
+    margin-right: 10px;
     padding-left: 16px;
     padding-right: 16px;
-    border-radius: 10px;
-    transition: none;
-    color: #ffffff;
-    background: #383c4a;
-}
-#battery.charging {
-    color: #ffffff;
-    background-color: #26A65B;
-}
-#battery.warning:not(.charging) {
-    background-color: #ffbe61;
-    color: black;
-}
-#battery.critical:not(.charging) {
-    background-color: #f53c3c;
-    color: #ffffff;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    border-radius: 15px;
+    background: blue
 }
 #battery:hover {
     color: rgba(200, 200, 200, 0.3)
 }
 
 #clock{
-    color: rgba(200, 200, 200, 0.3)
+    color: white;
+    margin-right: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 15px;
+    background: blue
 }
 #clock:hover {
 	color: rgba(200, 200, 200, 0.3)
