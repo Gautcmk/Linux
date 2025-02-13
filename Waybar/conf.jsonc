@@ -28,20 +28,23 @@
     },
 
 //CONFIG-RIGHT
+    "network": {
+        "format-wifi": "  {signalStrength}%",
+        "format-ethernet": "{cidr} ",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": " ⚠ ",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+
     "pulseaudio": {
       "format": "{icon}  {volume}%",
       "format-muted": "",
       "format-icons": {
         "default": ["", "", ""]
       },
+      "tooltip": false,
       "on-click": "pavucontrol"
-    },
-
-    "network": {
-      "format-wifi": "  {signalStrength}%",
-      "format-ethernet": "{cidr} ",
-      "format-linked": "{ifname} (No IP) ",
-      "format-disconnected": " ⚠ "
     },
 
     "battery": {
@@ -52,6 +55,8 @@
       "format": "{icon}  {capacity}%",
       "format-full": "{icon}  {capacity}%",
       "format-charging": "  {capacity}%",
+      "format-plugged": "  {capacity}%",
+      "format-alt": "{time} {icon}",
       "format-icons": ["", "", "", "", ""]
     },
 
