@@ -6,7 +6,6 @@
     "margin-top": 5,
     "margin-left": 5,
     "margin-right": 5,
-    "spacing": 1,
 
     "modules-left": ["custom/archlogo", "hyprland/workspaces"],
     "modules-center": ["hyprland/window"],
@@ -15,7 +14,7 @@
 
 // CONFIG-LEFT
     "custom/archlogo": {
-        "format": "󰣇",
+        "format": " 󰣇 ",
         "tooltip": false
     },
 
@@ -39,13 +38,11 @@
     "pulseaudio": {
         "reverse-scrolling": 1,
         "format": "{icon}",
-        "format-muted": "",
-        "format-icons": {
-            "headphone": "",
-            "default": ["", "", ""]
-        },
-        "on-click": "pavucontrol",
-        "min-length": 13
+        "format-muted": "",
+        "format-icons": { 
+            "headphone": "",
+            "default": ["", "", "", "", ""]
+        }
     },
     
     "battery": {
@@ -55,7 +52,7 @@
         },
       "format": "{icon} {capacity}%",
       "format-full": "{icon} {capacity}%",
-      "format-charging": " {capacity}%",
+      "format-charging": " {capacity}%",
       "format-icons": ["", "", "", "", ""]
     },
 
