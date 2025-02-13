@@ -3,7 +3,10 @@
     "layer": "top",
     "position": "top",
     "height": 35,
-    "margin": "5 5 0 5",
+    "margin-top": 5,
+    "margin-left": 5,
+    "margin-right": 5,
+    "spacing": 1,
 
     "modules-left": ["custom/archlogo", "hyprland/workspaces"],
     "modules-center": ["hyprland/window"],
@@ -25,7 +28,12 @@
 
 //CONFIG-RIGHT
     "network": {
-        
+        "format-disconnected": "⚠",
+        "format-ethernet": "",
+        "format-wifi": "{icon}",
+        "format-icons": {
+            "wifi": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"]
+        }
     },
 
     "pulseaudio": {

@@ -47,7 +47,6 @@ window#waybar {
 /*MODULES-RIGHT*/
 #network {
     color: white;
-    margin-right: 10px;
     padding-left: 16px;
     padding-right: 16px;
     border-radius: 15px;
@@ -59,9 +58,8 @@ window#waybar {
 
 #pulseaudio {
     color: white;
-    margin-right: 10px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 0px;
+    padding-right: 0px;
     border-radius: 15px;
     background: blue
 }
@@ -71,8 +69,7 @@ window#waybar {
 
 #battery {
     color: white;
-    margin-right: 10px;
-    padding-left: 16px;
+    padding-left: 12px;
     padding-right: 16px;
     border-radius: 15px;
     background: blue
@@ -83,9 +80,8 @@ window#waybar {
 
 #clock{
     color: white;
-    margin-right: 10px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
     border-radius: 15px;
     background: blue
 }
