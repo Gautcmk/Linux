@@ -46,9 +46,9 @@ window#waybar {
 /*MODULES-RIGHT*/
 #network {
     color: white;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 15px; 
+    min-width: 100px;
+    border-radius: 15px;
+    background-color: blue
 }
 #network:hover {
     color: rgba(200, 200, 200, 0.3)
@@ -58,7 +58,8 @@ window#waybar {
     color: white;
     padding-left: 10px;
     padding-right: 10px;
-    border-radius: 15px;
+    min-width: 25px;
+    border-radius: 15px
 }
 #pulseaudio:hover {
     color: rgba(200, 200, 200, 0.3)
@@ -68,8 +69,9 @@ window#waybar {
     color: white;
     padding-left: 10px;
     padding-right: 10px;
-    border-radius: 15px;
-}
+    min-width: 65px;
+    border-radius: 15px
+}   
 #battery:hover {
     color: rgba(200, 200, 200, 0.3)
 }
@@ -78,8 +80,10 @@ window#waybar {
     color: white;
     padding-left: 10px;
     padding-right: 20px;
-    border-radius: 15px;
+    min-width: 50px;
+    border-radius: 15px
 }
 #clock:hover {
-	color: rgba(200, 200, 200, 0.3)
+        color: rgba(200, 200, 200, 0.3)
 }
+
