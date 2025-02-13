@@ -15,11 +15,10 @@ window#waybar {
 
 /*MODULES-LEFT*/
 #custom-archlogo {
+    min-width: 65px;
     color: RGB(23, 147, 209);
     font-size: 20px;
     font-family: "Nerd Font";
-    padding-left: 15px;
-    padding-right: 15px;
     border-radius: 15px
 }
 
@@ -46,11 +45,8 @@ window#waybar {
 /*MODULES-RIGHT*/
 #network {
     color: white;
-    min-width: 100px;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-radius: 15px;
-    
+    min-width: 35px;
+    border-radius: 15px; 
     background: blue
 }
 #network:hover {
@@ -59,9 +55,7 @@ window#waybar {
 
 #pulseaudio {
     color: white;
-    min-width: 100px;
-    padding-left: 5px;
-    padding-right: 7px;
+    min-width: 35px;
     border-radius: 15px;
     background: blue
 }
@@ -72,8 +66,7 @@ window#waybar {
 #battery {
     color: white;
     min-width: 100px;
-    padding-left: 7px;
-    padding-right: 7px;
+    min-width: 80px;
     border-radius: 15px;
     background: blue
 }
@@ -83,9 +76,7 @@ window#waybar {
 
 #clock{
     color: white;
-    min-width: 100px;
-    padding-left: 20px;
-    padding-right: 20px;
+    min-width: 80px;
     border-radius: 15px;
     background: blue
 }
