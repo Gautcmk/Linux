@@ -2,6 +2,7 @@
 // GENERAL    
     "layer": "top",
     "position": "top",
+    "height": 30,
     "margin": "5 5 0 5",
 
     "modules-left": ["custom/archlogo", "hyprland/workspaces"],

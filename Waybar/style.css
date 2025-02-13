@@ -10,9 +10,8 @@
 
 window#waybar {
     background-color: #383c4a;
-    border-radius: 13px;
-    transition-property: background-color;
-    transition-duration: .5s;
+    border-radius: 15px;
+    
 }
 window#waybar.hidden {
     opacity: 0.2;
@@ -22,17 +21,16 @@ window#waybar.hidden {
 #custom-archlogo {
     color: RGB(23, 147, 209);
     font-family: "Nerd Font";
-    padding-left: 16px;
-    padding-right: 16px;
-    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
     transition: none;
-    background-color: #383c4a;
 }
 
 #workspaces {
-    background-color: transparent;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
+    margin-right: 8px;
+    border-radius: 15px;
+    background-color: blue;
 }
 #workspaces button {
     color: white;
