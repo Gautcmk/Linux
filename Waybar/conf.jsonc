@@ -41,7 +41,7 @@
         "format-muted": "",
         "format-icons": { 
             "headphone": "",
-            "default": ["", "", "", "", ""]
+            "default": ["", "", "", ""]
         }
     },
     
