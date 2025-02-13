@@ -8,7 +8,7 @@
 }
 
 window#waybar {
-    background-color: #383c4a;
+    background-color: rgb(56, 60, 74);
     border-radius: 15px; 
 }
 
@@ -23,14 +23,12 @@ window#waybar {
 }
 
 #workspaces {
-    margin-right: 8px;
-    border-radius: 15px;
-    background-color: blue;
+    color: white;
+    border-radius: 5px;
 }
 #workspaces button {
-    color: white;
-    padding: 0 5;
-    background-color: transparent;
+    padding-left: 5px;
+    padding-left: 5px;
     transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 #workspaces button.active {
@@ -39,6 +37,8 @@ window#waybar {
 }
 #workspaces button:hover {
     color: rgba(200, 200, 200, 0.3);
+    opacity: 0.7;
+    border: 0px;
 }
 
 /*MODULES-CENTER*/
@@ -58,10 +58,9 @@ window#waybar {
 
 #pulseaudio {
     color: white;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 7px;
+    padding-right: 7px;
     border-radius: 15px;
-    background: blue
 }
 #pulseaudio:hover {
     color: rgba(200, 200, 200, 0.3)
@@ -69,10 +68,9 @@ window#waybar {
 
 #battery {
     color: white;
-    padding-left: 12px;
-    padding-right: 16px;
+    padding-left: 7px;
+    padding-right: 7px;
     border-radius: 15px;
-    background: blue
 }
 #battery:hover {
     color: rgba(200, 200, 200, 0.3)
@@ -83,7 +81,6 @@ window#waybar {
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 15px;
-    background: blue
 }
 #clock:hover {
 	color: rgba(200, 200, 200, 0.3)
