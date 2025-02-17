@@ -1,82 +1,67 @@
 configuration {
-  font: "Noto Sans Mono 12";
+    font: "Noto Sans Mono 12";
 	width: 30;
 	line-margin: 10;
 	lines: 6;
 	columns: 2;
-
-  display-ssh:    "";
-  display-run:    "";
-  display-drun:   "";
-  display-window: "";
-  display-combi:  "";
-  show-icons:     true;
+    show-icons: false;
 }
 
 * {
-  background-color: transparent;
-  highlight: underline bold @fg1@;
+    background-color: transparent;
 }
 
 window {
-  location: center;
-  anchor: center;
-  transparency: "screenshot";
-  padding: 0px;
-  border: 0px;
-  border-radius: 0px;
-
-  spacing: 0;
-  children: [mainbox];
-  orientation: horizontal;
+    location: center;
+    anchor: center;
+    transparency: "screenshot";
+    padding: 0px;
+    border: 0px;
+    border-radius: 0px;
+    spacing: 0;
+    orientation: horizontal;
 }
 
 mainbox {
-  spacing: 0;
-  children: [ inputbar, message, listview ];
+    spacing: 0;
+    children: [ inputbar, message, listview ];
 }
 
 message {
-  color: @bg0@;
-  padding: 5;
-  border-color: @fg0@;
-  border:  0px 2px 2px 2px;
+    color: red;
+    padding: 5;
+    border:  0px 2px 2px 2px;
 }
 
 inputbar {
-  color: @fg0@;
-  padding: 11px;
-  background-color: @bg1@;
-}
-
-entry, prompt, case-indicator {
-  text-font: inherit;
-  text-color: inherit;
+    color: white;
+    padding: 10px;
+    background-color: grey;
 }
 
 prompt {
-  margin: 0px 0.3em 0em 0em;
+    margin: 0px 0.3em 0em 0em;
 }
 
 listview {
-  padding: 8px;
-  border: 0;
-  background-color: @bg0@e5;
-  dynamic: false;
+    padding: 8px;
+    border: 0;
+    background-color: black;
+    dynamic: false;
 }
 
 element {
-  padding: 3px;
-  border-radius: 4px;
-  text-color: @fg0@;
+    padding: 3px;
+    border-radius: 4px;
+    text-color: white;
 }
 
 element selected.normal {
-	background-color: @primary@;
-  text-color: @bg0@;
+	background-color: white;
+    text-color: white;
 }
 
 element-text, element-icon {
-  background-color: inherit;
-  text-color: inherit;
+    background-color: inherit;
+    text-color: inherit;
 }
