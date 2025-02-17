@@ -1,67 +1,89 @@
+/* App launcher, window switcher, file browser */
+
 configuration {
-    font: "Noto Sans Mono 12";
-	width: 30;
-	line-margin: 10;
-	lines: 6;
-	columns: 2;
-    show-icons: false;
+  font:                     "JetBrainsMono Nerd Font 8";
+  display-drun:             " ";
+  drun-display-format:      "{name}";
 }
 
-* {
-    background-color: transparent;
-}
+@theme "~/.config/rofi/theme.rasi"
+
+/* Window */
 
 window {
-    location: center;
-    anchor: center;
-    transparency: "screenshot";
-    padding: 0px;
-    border: 0px;
-    border-radius: 0px;
-    spacing: 0;
-    orientation: horizontal;
+  width:                    250px;
+  border:                   2px;
+  border-radius:            10px;
+  border-color:             @main-br;
+  background-color:         @main-bg;
+  children:                 [ mainbox ];
 }
 
 mainbox {
-    spacing: 0;
-    children: [ inputbar, message, listview ];
+  spacing:                  0;
+  background-color:         inherit;
+  text-color:               @main-fg;
+  children:                 [ inputbar, listview ];
 }
 
-message {
-    color: red;
-    padding: 5;
-    border:  0px 2px 2px 2px;
-}
+/* Input */
 
 inputbar {
-    color: white;
-    padding: 10px;
-    background-color: grey;
+  margin:                   8px 8px 0 8px;
+  border-radius:            6px;
+  spacing:                  inherit;
+  background-color:         @input-bg;
+  text-color:               inherit;
+  children:                 [ prompt, entry ];
+
+}
+prompt {
+  padding:                  6px 10px;
+  background-color:         inherit;
+  text-color:               inherit;
+}
+entry {
+  placeholder:              "Search";
+  padding:                  6px 0;
+  cursor:                   text;
+  background-color:         inherit;
+  text-color:               inherit;
 }
 
-prompt {
-    margin: 0px 0.3em 0em 0em;
-}
+/* List */
 
 listview {
-    padding: 8px;
-    border: 0;
-    background-color: black;
-    dynamic: false;
+  lines:                    6;
+  cycle:                    false;
+  padding:                  8px;
+  background-color:         inherit;
 }
 
 element {
-    padding: 3px;
-    border-radius: 4px;
-    text-color: white;
+  padding:                  6px;
+  cursor:                   pointer;
+  background-color:         inherit;
+  text-color:               @main-fg;
+}
+element selected active,
+element selected normal {
+  border-radius:            6px;
+  background-color:         @select-bg;
+  text-color:               @select-fg;
+}
+element-text {
+  padding:                  0 6px;
+  cursor:                   inherit;
+  background-color:         inherit;
+  text-color:               inherit;
 }
 
-element selected.normal {
-	background-color: white;
-    text-color: white;
+error-message {
+  padding:                  6px;
+  background-color:         @main-bg;
 }
-
-element-text, element-icon {
-    background-color: inherit;
-    text-color: inherit;
+textbox {
+  padding:                  6px;
+  background-color:         inherit;
+  text-color:               @main-fg;
 }
