@@ -46,9 +46,10 @@ window#waybar {
 /*MODULES-RIGHT*/
 #network {
     color: white;
-    min-width: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    min-width: 20px;
     border-radius: 15px;
-    background-color: blue
 }
 #network:hover {
     color: rgba(200, 200, 200, 0.3)

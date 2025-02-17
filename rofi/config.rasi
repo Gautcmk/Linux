@@ -1,0 +1,69 @@
+/* Exemple de configuration Rofi (config.rasi) */
+
+/* Paramètres généraux */
+configuration {
+    font: "Fira Code 12";
+    show-icons: true;
+    case-sensitive: false;
+    disabled: false;
+    history: true;
+    max-history: 20;
+}
+
+/* Thème et couleurs */
+* {
+    background: #2e3440;
+    foreground: #d8dee9;
+    border: 2px solid #81a1c1;
+    padding: 5px;
+}
+
+window {
+    width: 40%;
+    height: 60%;
+    border-radius: 10px;
+}
+
+listview {
+    lines: 10;
+    fixed-height: true;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Barre de sélection */
+element {
+    border-radius: 5px;
+    padding: 5px;
+    background: #3b4252;
+}
+
+element selected {
+    background: #81a1c1;
+    foreground: #2e3440;
+}
+
+/* Focus et survol */
+element hovered {
+    background: #4c566a;
+}
+
+/* Recherche */
+textbox {
+    background: #3b4252;
+    foreground: #d8dee9;
+    border: none;
+    padding: 5px;
+}
+
+separator {
+    background: #4c566a;
+    height: 1px;
+}
+
+/* Application des icônes */
+.icon {
+    padding: 0 10px;
+    image-width: 20px;
+    image-height: 20px;
+}
