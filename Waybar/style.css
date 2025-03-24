@@ -1,90 +1,80 @@
 * {
-    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-family: "JetBrainsMono Nerd Font";
     transition-property: background-color;
-    transition-duration: .5s;       
-    font-size: 15px;
+    transition-duration: .5s;
+    font-size: 14px;
 }
-.icon {
-    font-family: "Font Awesome 6 Free"
-}
-
 window#waybar {
-    background-color: rgb(56, 60, 74);
-    border-radius: 15px 
+    background-color: rgba(48, 52, 70, 0.8);
+    border-radius: 13px 
 }
 
 
 /*MODULES-LEFT*/
 #custom-archlogo {
-    min-width: 65px;
-    color: RGB(23, 147, 209);
+    min-width: 70px;
+    color: rgb(23, 147, 209);
     font-size: 20px;
     font-family: "Nerd Font";
-    border-radius: 15px
+    border-radius: 13px
 }
-
 #workspaces {
-    color: white;
     border-radius: 5px
 }
 #workspaces button {
-    padding-left: 10px;
-    padding-right: 10px;
+    color: rgb(198, 208, 245);
+    padding-left: 5px;
+    padding-right: 5px;
     transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1)
 }
 #workspaces button.active {
-    background-color: rgba(200, 200, 200, 0.3);
-    border-bottom: 3px solid white
+    background-color: rgba(198, 208, 245, 0.3)
 }
 #workspaces button:hover {
-    color: rgba(200, 200, 200, 0.3)
+    background: rgba(198, 208, 245, 0.3);
 }
 
 
 /*MODULES-CENTER*/
+#window {
+    color: rgb(198, 208, 245);
+}
+
 
 /*MODULES-RIGHT*/
 #network {
-    color: white;
+    color: rgb(198, 208, 245);
     padding-left: 10px;
     padding-right: 10px;
-    min-width: 20px;
     border-radius: 15px;
 }
 #network:hover {
     color: rgba(200, 200, 200, 0.3)
 }
-
 #pulseaudio {
-    color: white;
+    color: rgb(198, 208, 245);
     padding-left: 10px;
     padding-right: 10px;
-    min-width: 25px;
     border-radius: 15px
 }
 #pulseaudio:hover {
     color: rgba(200, 200, 200, 0.3)
 }
-
 #battery {
-    color: white;
+    color: rgb(198, 208, 245);
     padding-left: 10px;
     padding-right: 10px;
-    min-width: 65px;
-    border-radius: 15px
+    border-radius: 15px 
 }   
 #battery:hover {
     color: rgba(200, 200, 200, 0.3)
 }
-
 #clock{
-    color: white;
+    color: rgb(198, 208, 245);
     padding-left: 10px;
     padding-right: 20px;
-    min-width: 50px;
     border-radius: 15px
 }
 #clock:hover {
         color: rgba(200, 200, 200, 0.3)
 }
-
