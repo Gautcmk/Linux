@@ -10,11 +10,13 @@
     "modules-center": ["hyprland/window"],
     "modules-right": ["network", "pulseaudio", "battery", "clock"],
 
+
 // CONFIG-LEFT
     "custom/archlogo": {
         "format": " 󰣇 ",
         "tooltip": false
     },
+
     "hyprland/workspaces": {
         "tooltip": false
     },
