@@ -6,8 +6,9 @@
 }
 window#waybar {
     background-color: rgba(48, 52, 70, 0.8);
-    border-radius: 13px 
+    border-radius: 13px
 }
+
 
 
 /*MODULES-LEFT*/
@@ -18,7 +19,6 @@ window#waybar {
     font-family: "Nerd Font";
     border-radius: 13px
 }
-
 #workspaces {
     border-radius: 5px
 }
@@ -32,17 +32,37 @@ window#waybar {
     background-color: rgba(198, 208, 245, 0.3)
 }
 #workspaces button:hover {
-    background: rgba(198, 208, 245, 0.3);
+    background: rgba(200, 200, 200, 0.3);
 }
-
 
 /*MODULES-CENTER*/
-#window {
+#clock{
     color: rgb(198, 208, 245);
+    padding-left: 10px;
+    padding-right: 20px;
+    border-radius: 15px
 }
 
-
 /*MODULES-RIGHT*/
+
+#cpu {
+    color: rgb(198, 208, 245);
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+}
+#cpu:hover {
+    color: rgba(200, 200, 200, 0.3)
+}
+#memory {
+    color: rgb(198, 208, 245);
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+}
+#memoryhover {
+    color: rgba(200, 200, 200, 0.3)
+}
 #network {
     color: rgb(198, 208, 245);
     padding-left: 10px;
@@ -66,19 +86,9 @@ window#waybar {
 #battery {
     color: rgb(198, 208, 245);
     padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 15px 
+    padding-right: 20px;
+    border-radius: 15px
 }   
 #battery:hover {
     color: rgba(200, 200, 200, 0.3)
-}
-
-#clock{
-    color: rgb(198, 208, 245);
-    padding-left: 10px;
-    padding-right: 20px;
-    border-radius: 15px
-}
-#clock:hover {
-        color: rgba(200, 200, 200, 0.3)
 }
